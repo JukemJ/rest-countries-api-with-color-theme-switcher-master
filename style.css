@@ -3,3 +3,52 @@ body{
     font-size: 18px;
     font-weight: bold;
 }
+span{
+    font-weight: lighter;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+input{
+    border: none;
+}
+
+.panel{
+    border-radius: 10px;
+}
+.panel img{
+    border-radius: 10px 10px 0 0;
+}
+select{
+    border: none;
+
+}
+body.dark-mode{
+    background-color: hsl(207, 26%, 17%);
+    color: white;
+}
+header.dark-mode{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+}
+.panel.dark-mode{
+    background-color: hsl(209, 23%, 22%);
+    color: white
+}
+input.dark-mode{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    border-radius: 5px;
+}
+select.dark-mode{
+    background-color: hsl(209, 23%, 22%);
+    color: white;
+    border-radius: 5px;
+}
+h3{
+    margin: 1rem 0 0 1rem;
+}
+strong{
+    margin-left: 1rem;
+}

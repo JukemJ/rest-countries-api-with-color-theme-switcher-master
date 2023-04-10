@@ -12,58 +12,36 @@
 
 </head>
     <header class="container-fluid">
-        <div class="row justify-content-between py-4 px-5 shadow-sm">
+        <div class="header row justify-content-between py-4 px-5 shadow-sm">
             <div class="col-3">
-                Where in the world?
+                <a href="index.html">Where in the world?</a>
             </div>
-            <div class="col-3 text-end">
+            <div class="col-3 text-end" id="dark-mode">
                 🌙Dark Mode
             </div>
         </div>
 
     </header>
     <body>
-        <div class="container-fluid mt-5 px-3">
-            <div class="row justify-content-between">
-                <input type="text" class="col-5" placeholder="Search for a country...">
-                <select class="col-2 btn-primary">
-                    <option selected>Filter by Region</option>
+        <div class="container-fluid mt-5">
+            <div class="row justify-content-between px-5">
+                <input type="text" class="col-5 shadow-sm p-3" id="searchbox" placeholder="Search for a country...">
+                <select class="col-2 shadow-sm" id="region-select">
+                    <option disabled selected value="All">Filter by Region</option>
                     <option value="Africa">Africa</option>
                     <option value="America">America</option>
                     <option value="Asia">Asia</option>
                     <option value="Europe">Europe</option>
                     <option value="Oceania">Oceania</option>
                 </select>
-                
             </div>
 
-            <div class="row p-2 justify-content-between">
-                <div class="col-2 border">
-                    <img src="">
-                    <span>country<span>
-                </div>
-                <div class="col-2 border">
-                    <img src="">
-                    <span>country<span>
-                </div>
-                <div class="col-2 border">
-                    <img src="">
-                    <span>country<span>
-                </div>
-                <div class="col-2 border">
-                    <img src="">
-                    <span>country<span>
-                </div>
-            </div>
-            <div class="row p-2 justify-content-between mx-3">
-                <div class="col-2 border">
-                    <img src="">
-                    <span>country<span>
-                </div>
+            <div class="row p-3 mx-5 mt-5 justify-content-between rounded" id="country-row">
+                
             </div>
         </div>
 
-        <button class="btn btn-primary" id="search">CLICK</button>
+        
     </body>
     <script src="script.js"></script>
 </html>
